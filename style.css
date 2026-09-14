@@ -1,13 +1,12 @@
-/* ===== Colours taken straight from the Power logo ===== */
+/* Colours taken from the Power logo */
 :root {
-  --brown: #5b3826;      /* logo outline / header background */
-  --cream: #fdf3d1;      /* logo circle background */
-  --orange: #f2a530;     /* logo lightning bolt */
+  --brown: #5b3826;
+  --cream: #fdf3d1;
+  --orange: #f2a530;
   --white: #ffffff;
   --text: #333333;
 }
 
-/* ===== Reset & base ===== */
 * { box-sizing: border-box; }
 
 body {
@@ -22,7 +21,6 @@ a { color: inherit; text-decoration: none; }
 
 h1, h2, h3 { margin: 0 0 0.5rem; color: var(--brown); }
 
-/* ===== Header & navigation ===== */
 .site-header {
   display: flex;
   align-items: center;
@@ -33,153 +31,40 @@ h1, h2, h3 { margin: 0 0 0.5rem; color: var(--brown); }
   background: var(--brown);
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
+.brand { display: flex; align-items: center; gap: 0.75rem; }
 .brand img { width: 48px; height: 48px; }
-
-.brand-name {
-  color: var(--white);
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
+.brand-name { color: var(--white); font-weight: bold; font-size: 1.1rem; }
 .site-nav { display: flex; gap: 0.5rem; }
+.nav-link { padding: 0.5rem 1rem; color: var(--cream); font-weight: bold; border-radius: 4px; }
+.nav-link:hover { background: var(--orange); color: var(--brown); }
+.nav-link[aria-current="page"] { background: var(--cream); color: var(--brown); }
 
-.nav-link {
-  padding: 0.5rem 1rem;
-  color: var(--cream);
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-/* Mouse-over feedback */
-.nav-link:hover {
-  background: var(--orange);
-  color: var(--brown);
-}
-
-/* Feedback for the current page */
-.nav-link[aria-current="page"] {
-  background: var(--cream);
-  color: var(--brown);
-}
-
-/* ===== Page layout ===== */
-.page-shell {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-/* Only the active page section is shown - controlled by script.js */
-.page { display: none; }
-.page.active { display: block; }
-
+.page-shell { max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem; }
 .intro { margin-bottom: 2rem; }
-
 .lede { color: var(--brown); }
-
 .note { color: var(--brown); font-style: italic; }
 
-/* ===== Reusable card grid (used on Home, Televisions, About) ===== */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.card { padding: 1rem; background: var(--white); border: 2px solid var(--brown); border-radius: 6px; }
 
-.card {
-  padding: 1rem;
-  background: var(--white);
-  border: 2px solid var(--brown);
-  border-radius: 6px;
-}
-
-/* ===== Highlight box (About / Televisions insight) ===== */
-.highlight {
-  display: block;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  background: var(--white);
-  border-left: 6px solid var(--orange);
-  border-radius: 6px;
-}
-
+.highlight { padding: 1rem; margin-bottom: 1.5rem; background: var(--white); border-left: 6px solid var(--orange); border-radius: 6px; }
 .highlight span { display: block; margin-top: 0.5rem; color: var(--brown); }
 
-/* ===== Table ===== */
 .table-wrap { overflow-x: auto; margin-bottom: 2rem; }
-
-table {
-  width: 100%;
-  min-width: 600px;
-  border-collapse: collapse;
-  background: var(--white);
-}
-
-th, td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--brown);
-  text-align: left;
-}
-
+table { width: 100%; min-width: 600px; border-collapse: collapse; background: var(--white); }
+th, td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--brown); text-align: left; }
 th { background: var(--brown); color: var(--white); }
+.tag { display: inline-block; padding: 0.2rem 0.5rem; background: var(--cream); border: 1px solid var(--orange); border-radius: 4px; font-size: 0.85rem; }
 
-.tag {
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  background: var(--cream);
-  border: 1px solid var(--orange);
-  border-radius: 4px;
-  font-size: 0.85rem;
-}
-
-/* ===== Chart grid ===== */
-.chart-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.chart-card {
-  margin: 0;
-  padding: 0;
-  background: var(--white);
-  border: 2px solid var(--brown);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.chart-card img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-  background: var(--white);
-}
-
+.chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.chart-card { margin: 0; background: var(--white); border: 2px solid var(--brown); border-radius: 6px; overflow: hidden; }
+.chart-card img { display: block; width: 100%; height: 220px; object-fit: contain; background: var(--white); }
 .chart-card figcaption { padding: 0.75rem 1rem; }
-
 .chart-card figcaption span { display: block; color: var(--brown); font-size: 0.9rem; }
 
-/* ===== Footer ===== */
-.site-footer {
-  padding: 1rem 1.5rem;
-  background: var(--brown);
-  color: var(--cream);
-  text-align: center;
-  font-size: 0.85rem;
-}
-
+.site-footer { padding: 1rem 1.5rem; background: var(--brown); color: var(--cream); text-align: center; font-size: 0.85rem; }
 .site-footer p { margin: 0.25rem 0; }
 
-/* ===== Small screens ===== */
 @media (max-width: 700px) {
   .card-grid, .chart-grid { grid-template-columns: 1fr; }
   .site-header { flex-direction: column; align-items: flex-start; }

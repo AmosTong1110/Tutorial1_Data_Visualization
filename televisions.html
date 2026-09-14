@@ -6,37 +6,26 @@
     <title>Televisions | Power AU</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body data-page="televisions">
+  <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Power home page">
         <img src="Picture/power_logo.png" alt="Power logo" />
-        <span
-          ><span class="brand-name">POWER / AU</span>
-          <span class="brand-caption">Energy choices, made clearer</span></span
-        >
+        <span class="brand-name">POWER AUSTRALIA</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" data-page="home" href="index.html">Home</a
-        ><a class="nav-link" data-page="televisions" href="televisions.html"
-          >Televisions</a
-        ><a class="nav-link" data-page="about" href="about_us.html">About Us</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="televisions.html" aria-current="page">Televisions</a>
+        <a class="nav-link" href="about_us.html">About Us</a>
       </nav>
     </header>
     <main class="page-shell">
-      <section class="page-intro">
-        <p class="eyebrow">Appliance / 01</p>
-        <h1>Televisions, in focus.</h1>
-        <p class="lede">
-          Compare screen size and estimated energy use with your viewing habits.
-        </p>
-      </section>
-      <section aria-labelledby="compare-title">
-        <div class="section-heading">
-          <h2 id="compare-title">A sample comparison</h2>
-          <p>
-            Illustrative figures only. Check current product labels.
-          </p>
+      <section>
+        <div class="intro">
+          <h1>Televisions, in focus.</h1>
+          <p class="lede">Compare screen size and estimated energy use with your viewing habits.</p>
         </div>
+        <h2>A sample comparison</h2>
+        <p class="note">Illustrative figures only. Check current product labels.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -48,132 +37,37 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>LED LCD</td>
-                <td>55 inch</td>
-                <td>120 kWh</td>
-                <td><span class="efficiency">Efficient baseline</span></td>
-              </tr>
-              <tr>
-                <td>LED LCD</td>
-                <td>75 inch</td>
-                <td>185 kWh</td>
-                <td><span class="efficiency">Good with mindful use</span></td>
-              </tr>
-              <tr>
-                <td>OLED</td>
-                <td>65 inch</td>
-                <td>210 kWh</td>
-                <td><span class="efficiency">Variable by content</span></td>
-              </tr>
-              <tr>
-                <td>Large format</td>
-                <td>85 inch</td>
-                <td>295 kWh</td>
-                <td>
-                  <span class="efficiency">More screen, more demand</span>
-                </td>
-              </tr>
+              <tr><td>LED LCD</td><td>55 inch</td><td>120 kWh</td><td><span class="tag">Efficient baseline</span></td></tr>
+              <tr><td>LED LCD</td><td>75 inch</td><td>185 kWh</td><td><span class="tag">Good with mindful use</span></td></tr>
+              <tr><td>OLED</td><td>65 inch</td><td>210 kWh</td><td><span class="tag">Variable by content</span></td></tr>
+              <tr><td>Large format</td><td>85 inch</td><td>295 kWh</td><td><span class="tag">More screen, more demand</span></td></tr>
             </tbody>
           </table>
         </div>
-      </section>
-      <section class="section insights" aria-labelledby="insights-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">What the dataset suggests</p>
-            <h2 id="insights-title">The bigger picture behind the screen</h2>
-          </div>
-          <p>
-            These charts describe the available models in this dataset. They are
-            useful for spotting patterns, not a substitute for the energy label
-            on an individual TV.
-          </p>
-        </div>
-        <div class="insight-lead">
-          <strong
-            >LCD (LED) is the dominant technology in the Australian
-            listings.</strong
-          ><span
-            >That availability connects with the other charts: the market has
-            many mid-to-large screen options, while power use varies by both
-            screen technology and brand.</span
-          >
+        <h2>The bigger picture behind the screen</h2>
+        <p class="note">These charts describe the available models in this dataset. They are useful for spotting patterns, not a substitute for the energy label on an individual TV.</p>
+        <div class="highlight">
+          <strong>LCD (LED) is the dominant technology in the Australian listings.</strong>
+          <span>That availability connects with the other charts: the market has many mid-to-large screen options, while power use varies by both screen technology and brand.</span>
         </div>
         <div class="chart-grid">
-          <figure class="chart-card">
-            <img
-              src="Picture/PieChart1.png"
-              alt="Pie chart showing LCD LED as the largest TV screen technology category, followed by LCD and OLED"
-            />
-            <figcaption><strong>Screen technology mix</strong><span>LCD (LED) is the largest listed category.</span></figcaption>
-          </figure>
-          <figure class="chart-card">
-            <img
-              src="Picture/BarChart1.png"
-              alt="Bar chart showing LCD LED has the highest occurrence count among TV screen technologies"
-            />
-            <figcaption><strong>Technology availability</strong><span>LCD (LED) appears most often.</span></figcaption>
-          </figure>
-          <figure class="chart-card">
-            <img
-              src="Picture/BarChart2.png"
-              alt="Bar chart comparing television screen sizes across brands"
-            />
-            <figcaption><strong>Common screen sizes</strong><span>55-inch models are the most common.</span></figcaption>
-          </figure>
-          <figure class="chart-card">
-            <img
-              src="Picture/BarChart3.png"
-              alt="Bar chart comparing the number of television models by brand"
-            />
-            <figcaption><strong>Model variety</strong><span>Kogan has the most listed models.</span></figcaption>
-          </figure>
-          <figure class="chart-card">
-            <img
-              src="Picture/BarChart4.png"
-              alt="Bar chart comparing median average-mode power by screen technology"
-            />
-            <figcaption><strong>Power by technology</strong><span>OLED has the highest median power use.</span></figcaption>
-          </figure>
-          <figure class="chart-card">
-            <img
-              src="Picture/BarChart5.png"
-              alt="Bar chart comparing average-mode power totals across television brands"
-            />
-            <figcaption><strong>Power by brand</strong><span>Samsung Electronics has the highest total.</span></figcaption>
-          </figure>
+          <figure class="chart-card"><img src="Picture/PieChart1.png" alt="Pie chart showing LCD LED as the largest TV screen technology category" /><figcaption><strong>Screen technology mix</strong><span>LCD (LED) is the largest listed category.</span></figcaption></figure>
+          <figure class="chart-card"><img src="Picture/BarChart1.png" alt="Bar chart showing LCD LED has the highest occurrence count" /><figcaption><strong>Technology availability</strong><span>LCD (LED) appears most often.</span></figcaption></figure>
+          <figure class="chart-card"><img src="Picture/BarChart2.png" alt="Bar chart comparing television screen sizes" /><figcaption><strong>Common screen sizes</strong><span>55-inch models are the most common.</span></figcaption></figure>
+          <figure class="chart-card"><img src="Picture/BarChart3.png" alt="Bar chart comparing number of television models by brand" /><figcaption><strong>Model variety</strong><span>Kogan has the most listed models.</span></figcaption></figure>
+          <figure class="chart-card"><img src="Picture/BarChart4.png" alt="Bar chart comparing median power by screen technology" /><figcaption><strong>Power by technology</strong><span>OLED has the highest median power use.</span></figcaption></figure>
+          <figure class="chart-card"><img src="Picture/BarChart5.png" alt="Bar chart comparing power totals across brands" /><figcaption><strong>Power by brand</strong><span>Samsung Electronics has the highest total.</span></figcaption></figure>
         </div>
-      </section>
-      <section class="section feature-grid">
-        <article class="feature">
-          <span class="feature-icon">01</span>
-          <h3>Brightness matters</h3>
-          <p>
-            Higher brightness can draw more power.
-          </p>
-        </article>
-        <article class="feature">
-          <span class="feature-icon">02</span>
-          <h3>Standby is still use</h3>
-          <p>
-            Switching off at the wall can reduce idle use.
-          </p>
-        </article>
-        <article class="feature">
-          <span class="feature-icon">03</span>
-          <h3>Size has a trade-off</h3>
-          <p>
-            Larger panels usually use more energy.
-          </p>
-        </article>
+        <div class="card-grid">
+          <article class="card"><h3>Brightness matters</h3><p>Higher brightness can draw more power.</p></article>
+          <article class="card"><h3>Standby is still use</h3><p>Switching off at the wall can reduce idle use.</p></article>
+          <article class="card"><h3>Size has a trade-off</h3><p>Larger panels usually use more energy.</p></article>
+        </div>
       </section>
     </main>
     <footer class="site-footer">
-      <div class="footer-inner">
-        <p>&copy; 2026 <span class="footer-accent">TONG</span> | Power AU</p>
-      </div>
+      <p>&copy; 2026 TONG CHUNG ZHE | Power Australia</p>
+      <p>Created with the assistance of GenAI (used to help generate code and content).</p>
     </footer>
-    <script src="script.js" defer></script>
   </body>
 </html>
