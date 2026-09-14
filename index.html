@@ -6,99 +6,199 @@
     <title>Power | Appliance energy in Australia</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body data-page="home">
+  <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Power home page"
-        ><img src="Picture/power_logo.png" alt="Power logo" /><span
-          ><span class="brand-name">POWER / AUSTRALIA</span
-          ><span class="brand-caption">Energy choices, made clearer</span></span
-        ></a
-      >
+      <a class="brand" href="#home" data-page="home">
+        <img src="Picture/power_logo.png" alt="Power logo" />
+        <span class="brand-name">POWER AUSTRALIA</span>
+      </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" data-page="home" href="index.html">Home</a
-        ><a class="nav-link" data-page="televisions" href="televisions.html"
-          >Televisions</a
-        ><a class="nav-link" data-page="about" href="about_us.html">About Us</a>
+        <a class="nav-link" href="#home" data-page="home">Home</a>
+        <a class="nav-link" href="#televisions" data-page="televisions">Televisions</a>
+        <a class="nav-link" href="#about" data-page="about">About Us</a>
       </nav>
     </header>
+
     <main class="page-shell">
-      <section class="hero">
-        <div>
+
+      <!-- ===================== HOME PAGE ===================== -->
+      <section id="home" class="page">
+        <div class="intro">
           <h1>See the power behind everyday choices.</h1>
-          <p class="lede">
-            A simple guide to appliance energy use, labels, and small changes.
-          </p>
+          <p class="lede">A simple guide to appliance energy use, labels, and small changes.</p>
         </div>
-        <div class="hero-visual">
-          <img
-            src="Picture/power_logo.png"
-            alt="Amber lightning bolt Power emblem"
-          /><span class="visual-label">MEASURE / COMPARE / CHOOSE</span>
-        </div>
-      </section>
-      <section class="section" aria-labelledby="overview-title">
-        <div class="section-heading">
-          <h2 id="overview-title">Energy at a glance</h2>
-        </div>
-        <div class="stat-grid">
-          <article class="stat">
-            <span class="stat-number">01</span>
+
+        <div class="card-grid">
+          <article class="card">
             <h3>Know the label</h3>
-            <p>
-              Compare similar appliances before you buy.
-            </p>
+            <p>Compare similar appliances before you buy.</p>
           </article>
-          <article class="stat">
-            <span class="stat-number">02</span>
+          <article class="card">
             <h3>Watch the watts</h3>
-            <p>
-              Power use depends on wattage and running time.
-            </p>
+            <p>Power use depends on wattage and running time.</p>
           </article>
-          <article class="stat">
-            <span class="stat-number">03</span>
+          <article class="card">
             <h3>Think in seasons</h3>
-            <p>
-              Viewing habits and standby time affect annual use.
-            </p>
+            <p>Viewing habits and standby time affect annual use.</p>
           </article>
         </div>
-      </section>
-      <section class="section" aria-labelledby="start-title">
-        <div class="section-heading">
-          <h2 id="start-title">Start with a room</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature">
-            <span class="feature-icon">TV</span>
+
+        <div class="card-grid">
+          <article class="card">
             <h3>Televisions</h3>
-            <p>
-              Compare screen sizes, annual use, and viewing habits.
-            </p>
+            <p>Compare screen sizes, annual use, and viewing habits.</p>
           </article>
-          <article class="feature">
-            <span class="feature-icon">$</span>
+          <article class="card">
             <h3>Household costs</h3>
-            <p>
-              Use estimates to think about bills and efficiency.
-            </p>
+            <p>Use estimates to think about bills and efficiency.</p>
           </article>
-          <article class="feature">
-            <span class="feature-icon">AU</span>
+          <article class="card">
             <h3>Local context</h3>
-            <p>
-              Australian homes have different climates and electricity plans.
-            </p>
+            <p>Australian homes have different climates and electricity plans.</p>
           </article>
         </div>
       </section>
+
+      <!-- ===================== TELEVISIONS PAGE ===================== -->
+      <section id="televisions" class="page">
+        <div class="intro">
+          <h1>Televisions, in focus.</h1>
+          <p class="lede">Compare screen size and estimated energy use with your viewing habits.</p>
+        </div>
+
+        <h2>A sample comparison</h2>
+        <p class="note">Illustrative figures only. Check current product labels.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Television type</th>
+                <th>Typical size</th>
+                <th>Estimated annual use</th>
+                <th>Energy note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LED LCD</td>
+                <td>55 inch</td>
+                <td>120 kWh</td>
+                <td><span class="tag">Efficient baseline</span></td>
+              </tr>
+              <tr>
+                <td>LED LCD</td>
+                <td>75 inch</td>
+                <td>185 kWh</td>
+                <td><span class="tag">Good with mindful use</span></td>
+              </tr>
+              <tr>
+                <td>OLED</td>
+                <td>65 inch</td>
+                <td>210 kWh</td>
+                <td><span class="tag">Variable by content</span></td>
+              </tr>
+              <tr>
+                <td>Large format</td>
+                <td>85 inch</td>
+                <td>295 kWh</td>
+                <td><span class="tag">More screen, more demand</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>The bigger picture behind the screen</h2>
+        <p class="note">
+          These charts describe the available models in this dataset. They are useful for
+          spotting patterns, not a substitute for the energy label on an individual TV.
+        </p>
+        <div class="highlight">
+          <strong>LCD (LED) is the dominant technology in the Australian listings.</strong>
+          <span>That availability connects with the other charts: the market has many
+          mid-to-large screen options, while power use varies by both screen technology and brand.</span>
+        </div>
+
+        <div class="chart-grid">
+          <figure class="chart-card">
+            <img src="Picture/PieChart1.png" alt="Pie chart showing LCD LED as the largest TV screen technology category" />
+            <figcaption><strong>Screen technology mix</strong><span>LCD (LED) is the largest listed category.</span></figcaption>
+          </figure>
+          <figure class="chart-card">
+            <img src="Picture/BarChart1.png" alt="Bar chart showing LCD LED has the highest occurrence count" />
+            <figcaption><strong>Technology availability</strong><span>LCD (LED) appears most often.</span></figcaption>
+          </figure>
+          <figure class="chart-card">
+            <img src="Picture/BarChart2.png" alt="Bar chart comparing television screen sizes" />
+            <figcaption><strong>Common screen sizes</strong><span>55-inch models are the most common.</span></figcaption>
+          </figure>
+          <figure class="chart-card">
+            <img src="Picture/BarChart3.png" alt="Bar chart comparing number of television models by brand" />
+            <figcaption><strong>Model variety</strong><span>Kogan has the most listed models.</span></figcaption>
+          </figure>
+          <figure class="chart-card">
+            <img src="Picture/BarChart4.png" alt="Bar chart comparing median power by screen technology" />
+            <figcaption><strong>Power by technology</strong><span>OLED has the highest median power use.</span></figcaption>
+          </figure>
+          <figure class="chart-card">
+            <img src="Picture/BarChart5.png" alt="Bar chart comparing power totals across brands" />
+            <figcaption><strong>Power by brand</strong><span>Samsung Electronics has the highest total.</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Brightness matters</h3>
+            <p>Higher brightness can draw more power.</p>
+          </article>
+          <article class="card">
+            <h3>Standby is still use</h3>
+            <p>Switching off at the wall can reduce idle use.</p>
+          </article>
+          <article class="card">
+            <h3>Size has a trade-off</h3>
+            <p>Larger panels usually use more energy.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT US PAGE ===================== -->
+      <section id="about" class="page">
+        <div class="intro">
+          <h1>Useful context for better decisions.</h1>
+          <p class="lede">An educational project about appliance energy use in Australia.</p>
+        </div>
+
+        <div class="highlight">
+          <strong>Energy information should be clear enough to use at home and when comparing bills.</strong>
+          <span>We use simple explanations and indicative comparisons to make energy information
+          easier to use. Always check official product labels. Climate, homes, electricity plans,
+          and viewing habits affect results.</span>
+        </div>
+
+        <h2>Project principles</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Make it legible</h3>
+            <p>Use language people can act on.</p>
+          </article>
+          <article class="card">
+            <h3>Show the assumptions</h3>
+            <p>Keep estimates illustrative and use official data.</p>
+          </article>
+          <article class="card">
+            <h3>Keep it local</h3>
+            <p>Focus on appliances in Australian homes.</p>
+          </article>
+        </div>
+      </section>
+
     </main>
+
     <footer class="site-footer">
-      <div class="footer-inner">
-        <p><span class="footer-accent">&copy; 2026 TONG CHUNG ZHE | Power AUSTRALIA </span></p>
-        <p>Created the code with The Assisted of AI</p>
-      </div>
+      <p>&copy; 2026 TONG CHUNG ZHE | Power Australia</p>
+      <p>Created with the assistance of GenAI (used to help generate code and content).</p>
     </footer>
+
     <script src="script.js" defer></script>
   </body>
 </html>
