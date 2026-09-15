@@ -1,19 +1,29 @@
 <!doctype html>
+<!-- The root HTML element sets the document language to English. -->
 <html lang="en">
 
   <head>
+    <!-- Character encoding that supports standard text symbols. -->
     <meta charset="utf-8" />
+    <!-- Make the layout fit the width of phones and tablets. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Text shown in the browser tab. -->
     <title>About Us | Power Australia</title>
+    <!-- Load the shared stylesheet. -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Site header containing the logo and main navigation. -->
     <header class="site-header">
+      <!-- Link the logo back to the home page. -->
       <a class="brand" href="index.html" aria-label="Power home page">
+        <!-- Display the site logo. -->
         <img src="Picture/power_logo.png" alt="Power logo" />
+        <!-- Visible brand name beside the logo. -->
         <span class="brand-name">POWER AUSTRALIA</span>
       </a>
+      <!-- Navigation links shared by all three pages. -->
       <nav class="site-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="televisions.html">Televisions</a>
@@ -21,17 +31,21 @@
       </nav>
     </header>
     
+    <!-- Main content describing the project. -->
     <main class="page-shell">
       <section>
+        <!-- Introductory heading and description. -->
         <div class="intro">
           <h1>Useful context for better decisions.</h1>
           <p class="lede">An educational project about appliance energy use in Australia.</p>
         </div>
+        <!-- Highlight the main purpose of the project. -->
         <div class="highlight">
           <strong>Energy information should be clear enough to use at home and when comparing bills.</strong>
           <span>We use simple explanations and indicative comparisons to make energy information easier to use. Always check official product labels. Climate, homes, electricity plans, and viewing habits affect results.</span>
         </div>
         <h2>Project principles</h2>
+        <!-- Present the project's three guiding principles. -->
         <div class="card-grid">
           <article class="card">
             <h3>Make it legible</h3>
@@ -49,10 +63,12 @@
       </section>
     </main>
     
+    <!-- Footer displayed at the bottom of the page. -->
     <footer class="site-footer">
       <p>&copy; 2026 TONG CHUNG ZHE | Power Australia</p>
       <p>Created with the assistance of GenAI (used to help generate code and content).</p>
     </footer>
+    <!-- Load the shared JavaScript navigation after the page content. -->
     <script src="script.js"></script>
   </body>
 </html>

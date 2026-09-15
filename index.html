@@ -1,33 +1,49 @@
 <!doctype html>
+<!-- The root HTML element sets the document language to English. -->
 <html lang="en">
 
   <head>
+    <!-- Character encoding that supports standard text symbols. -->
     <meta charset="utf-8" />
+    <!-- Make the layout fit the width of phones and tablets. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Text shown in the browser tab. -->
     <title>Power | Appliance energy in Australia</title>
+    <!-- Load the shared stylesheet. -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Site header containing the logo and main navigation. -->
     <header class="site-header">
+      <!-- Link the logo back to the home page. -->
       <a class="brand" href="index.html" aria-label="Power home page">
+        <!-- Display the site logo. -->
         <img src="Picture/power_logo.png" alt="Power logo" />
+        <!-- Visible brand name beside the logo. -->
         <span class="brand-name">POWER AUSTRALIA</span>
       </a>
+      <!-- Navigation links shared by all three pages. -->
       <nav class="site-nav" aria-label="Main navigation">
+        <!-- The current page is marked for styling and accessibility. -->
         <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <!-- Link to the television data page. -->
         <a class="nav-link" href="televisions.html">Televisions</a>
+        <!-- Link to the project information page. -->
         <a class="nav-link" href="about_us.html">About Us</a>
       </nav>
     </header>
 
+    <!-- Main content for the home page. -->
     <main class="page-shell">
       <section>
+        <!-- Introductory heading and description. -->
         <div class="intro">
           <h1>See the power behind everyday choices.</h1>
           <p class="lede">A simple guide to appliance energy use, labels, and small changes.</p>
         </div>
 
+        <!-- First group of energy information cards. -->
         <div class="card-grid">
           <article class="card">
             <h3>Know the label</h3>
@@ -42,6 +58,7 @@
             <p>Viewing habits and standby time affect annual use.</p>
           </article>
         </div>
+        <!-- Second group of related topic cards. -->
         <div class="card-grid">
           <article class="card">
             <h3>Televisions</h3>
@@ -59,10 +76,12 @@
       </section>
     </main>
     
+    <!-- Footer displayed at the bottom of the page. -->
     <footer class="site-footer">
       <p>&copy; 2026 TONG CHUNG ZHE | Power Australia</p>
       <p>Created with the assistance of GenAI (used to help generate code and content).</p>
     </footer>
+    <!-- Load the shared JavaScript navigation after the page content. -->
     <script src="script.js"></script>
   </body>
 </html>

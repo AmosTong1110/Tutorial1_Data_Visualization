@@ -1,19 +1,29 @@
 <!doctype html>
+<!-- The root HTML element sets the document language to English. -->
 <html lang="en">
 
   <head>
+    <!-- Character encoding that supports standard text symbols. -->
     <meta charset="utf-8" />
+    <!-- Make the layout fit the width of phones and tablets. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Text shown in the browser tab. -->
     <title>Televisions | Power AU</title>
+    <!-- Load the shared stylesheet. -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Site header containing the logo and main navigation. -->
     <header class="site-header">
+      <!-- Link the logo back to the home page. -->
       <a class="brand" href="index.html" aria-label="Power home page">
+        <!-- Display the site logo. -->
         <img src="Picture/power_logo.png" alt="Power logo" />
+        <!-- Visible brand name beside the logo. -->
         <span class="brand-name">POWER AUSTRALIA</span>
       </a>
+      <!-- Navigation links shared by all three pages. -->
       <nav class="site-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="televisions.html" aria-current="page">Televisions</a>
@@ -21,15 +31,19 @@
       </nav>
     </header>
 
+    <!-- Main content containing the television comparison and charts. -->
     <main class="page-shell">
       <section>
+        <!-- Introductory heading and description. -->
         <div class="intro">
           <h1>Televisions, in focus.</h1>
           <p class="lede">Compare screen size and estimated energy use with your viewing habits.</p>
         </div>
         <h2>A sample comparison</h2>
         <p class="note">Illustrative figures only. Check current product labels.</p>
+        <!-- Wrap the table so it can scroll horizontally on small screens. -->
         <div class="table-wrap">
+          <!-- Compare television types, sizes, and estimated energy use. -->
           <table>
             <thead>
               <tr>
@@ -50,10 +64,12 @@
 
         <h2>The bigger picture behind the screen</h2>
         <p class="note">These charts describe the available models in this dataset. They are useful for spotting patterns, not a substitute for the energy label on an individual TV.</p>
+        <!-- Summarise the main pattern shown by the charts. -->
         <div class="highlight">
           <strong>LCD (LED) is the dominant technology in the Australian listings.</strong>
           <span>That availability connects with the other charts: the market has many mid-to-large screen options, while power use varies by both screen technology and brand.</span>
         </div>
+        <!-- Display the project charts in a responsive grid. -->
         <div class="chart-grid">
           <figure class="chart-card"><img src="Picture/PieChart1.png" alt="Pie chart showing LCD LED as the largest TV screen technology category" /><figcaption><strong>Screen technology mix</strong><span>LCD (LED) is the largest listed category.</span></figcaption></figure>
           <figure class="chart-card"><img src="Picture/BarChart1.png" alt="Bar chart showing LCD LED has the highest occurrence count" /><figcaption><strong>Technology availability</strong><span>LCD (LED) appears most often.</span></figcaption></figure>
@@ -62,6 +78,7 @@
           <figure class="chart-card"><img src="Picture/BarChart4.png" alt="Bar chart comparing median power by screen technology" /><figcaption><strong>Power by technology</strong><span>OLED has the highest median power use.</span></figcaption></figure>
           <figure class="chart-card"><img src="Picture/BarChart5.png" alt="Bar chart comparing power totals across brands" /><figcaption><strong>Power by brand</strong><span>Samsung Electronics has the highest total.</span></figcaption></figure>
         </div>
+        <!-- Provide short reminders about television energy use. -->
         <div class="card-grid">
           <article class="card"><h3>Brightness matters</h3><p>Higher brightness can draw more power.</p></article>
           <article class="card"><h3>Standby is still use</h3><p>Switching off at the wall can reduce idle use.</p></article>
@@ -70,10 +87,12 @@
       </section>
     </main>
     
+    <!-- Footer displayed at the bottom of the page. -->
     <footer class="site-footer">
       <p>&copy; 2026 TONG CHUNG ZHE | Power Australia</p>
       <p>Created with the assistance of GenAI (used to help generate code and content).</p>
     </footer>
+    <!-- Load the shared JavaScript navigation after the page content. -->
     <script src="script.js"></script>
   </body>
 </html>
