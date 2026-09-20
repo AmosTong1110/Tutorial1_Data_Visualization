@@ -4,18 +4,19 @@ Power Australia is a simple educational website designed to help people understa
 
 ## Project Overview
 
-This website is built as a three-page static web project using HTML, CSS, and JavaScript. It introduces the idea of energy awareness through a clean homepage, a television-focused information page, and an About Us page. The main goal is to make energy labels, appliance efficiency, and household electricity use easier to understand for everyday users.
+This website is built as a three-page static web project using HTML, CSS, and JavaScript. It introduces the idea of energy awareness through homepage, a television information page, and an About Us page. The main goal is to make energy labels, appliance efficiency, and household electricity use easier to understand for everyday users.
 
 ## Website Content
 
-The homepage explains key concepts such as:
+The television page explains key concepts such as:
 
-- understanding energy labels
+- which TV technology is available
+- understanding the most frequent screen size of TV
+- the most used TV brand 
 - comparing wattage and running time
-- considering seasonal usage patterns
-- how household habits affect annual electricity consumption
+- considering the relationship between power used and screen size
+- understanding star rating related with screen size
 
-The Television page explores the relationship between screen size, technology, and power use. It includes visualisations such as bar charts and scatter plots to show how larger TVs typically consume more power, while factors like technology and energy rating can influence efficiency. These charts make the data story more accessible and help users understand how to compare models before purchasing.
 
 ## GenAI Use
 
