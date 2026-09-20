@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="televisions-page">
     <!-- Site header containing the logo and main navigation. -->
     <header class="site-header">
       <!-- Link the logo back to the home page. -->
@@ -36,54 +36,39 @@
       <section>
         <!-- Introductory heading and description. -->
         <div class="intro">
-          <h1>Televisions, in focus.</h1>
-          <p class="lede">Compare screen size and estimated energy use with your viewing habits.</p>
+          <h1>Television Energy Tips</h1>
+          <p class="lede">Simple ways to understand television energy use before choosing a new screen.</p>
         </div>
-        <h2>A sample comparison</h2>
-        <p class="note">Illustrative figures only. Check current product labels.</p>
-        <!-- Wrap the table so it can scroll horizontally on small screens. -->
-        <div class="table-wrap">
-          <!-- Compare television types, sizes, and estimated energy use. -->
-          <table>
-            <thead>
-              <tr>
-                <th>Television type</th>
-                <th>Typical size</th>
-                <th>Estimated annual use</th>
-                <th>Energy note</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>LED LCD</td><td>55 inch</td><td>120 kWh</td><td><span class="tag">Efficient baseline</span></td></tr>
-              <tr><td>LED LCD</td><td>75 inch</td><td>185 kWh</td><td><span class="tag">Good with mindful use</span></td></tr>
-              <tr><td>OLED</td><td>65 inch</td><td>210 kWh</td><td><span class="tag">Variable by content</span></td></tr>
-              <tr><td>Large format</td><td>85 inch</td><td>295 kWh</td><td><span class="tag">More screen, more demand</span></td></tr>
-            </tbody>
-          </table>
+        <div class="tips-box">
+          <p><strong>Size and technology matter.</strong> Larger screens generally use more energy, while modern LED/LCD and OLED televisions can be more efficient than older technologies.</p>
+          <ul>
+            <li>Use Energy Saver or Eco mode and reduce brightness when comfortable.</li>
+            <li>Disable always-listening voice features if you do not use them.</li>
+            <li>Compare star ratings and annual kWh on the energy label before purchasing.</li>
+          </ul>
         </div>
 
-        <h2>The bigger picture behind the screen</h2>
-        <p class="note">These charts describe the available models in this dataset. They are useful for spotting patterns, not a substitute for the energy label on an individual TV.</p>
+        <h2>TV Energy Insights: Data Story</h2>
+        <p class="note">This section explores the Australian Government's Television Energy Rating dataset. The patterns below help Australian consumers compare technology, screen size, brand availability, and energy efficiency before choosing a TV.</p>
         <!-- Summarise the main pattern shown by the charts. -->
         <div class="highlight">
-          <strong>LCD (LED) is the dominant technology in the Australian listings.</strong>
-          <span>That availability connects with the other charts: the market has many mid-to-large screen options, while power use varies by both screen technology and brand.</span>
+          <strong>Screen size and technology both shape a television's energy profile.</strong>
+          <span>The dataset is led by LCD LED models and popular mid-sized screens, while the scatter plots show that larger televisions generally require more power.</span>
         </div>
         <!-- Display the project charts in a responsive grid. -->
         <div class="chart-grid">
-          <figure class="chart-card"><img src="Picture/PieChart1.png" alt="Pie chart showing LCD LED as the largest TV screen technology category" /><figcaption><strong>Screen technology mix</strong><span>LCD (LED) is the largest listed category.</span></figcaption></figure>
-          <figure class="chart-card"><img src="Picture/BarChart1.png" alt="Bar chart showing LCD LED has the highest occurrence count" /><figcaption><strong>Technology availability</strong><span>LCD (LED) appears most often.</span></figcaption></figure>
-          <figure class="chart-card"><img src="Picture/BarChart2.png" alt="Bar chart comparing television screen sizes" /><figcaption><strong>Common screen sizes</strong><span>55-inch models are the most common.</span></figcaption></figure>
-          <figure class="chart-card"><img src="Picture/BarChart3.png" alt="Bar chart comparing number of television models by brand" /><figcaption><strong>Model variety</strong><span>Kogan has the most listed models.</span></figcaption></figure>
-          <figure class="chart-card"><img src="Picture/BarChart4.png" alt="Bar chart comparing median power by screen technology" /><figcaption><strong>Power by technology</strong><span>OLED has the highest median power use.</span></figcaption></figure>
-          <figure class="chart-card"><img src="Picture/BarChart5.png" alt="Bar chart comparing power totals across brands" /><figcaption><strong>Power by brand</strong><span>Samsung Electronics has the highest total.</span></figcaption></figure>
+          <figure class="chart-card"><h3>Chart 1: What TV technologies are most common?</h3><img src="Picture/PieChart1.png" alt="Pie chart showing LCD LED as the largest TV screen technology category" /><p class="chart-description">LCD(LED) models make up most listings, while OLED is less common.</p></figure>
+          <figure class="chart-card"><h3>Chart 1: Technology counts</h3><img src="Picture/BarChart1.png" alt="Bar chart showing LCD LED has the highest occurrence count" /><p class="chart-description">The bar chart shows LCD(LED) is leading position in the dataset.</p></figure>
+          <figure class="chart-card"><h3>Chart 2: What screen sizes are most frequent?</h3><img src="Picture/BarChart2.png" alt="Bar chart comparing television screen sizes" /><p class="chart-description">55-inch and 65-inch TVs are most common.</p></figure>
+          <figure class="chart-card"><h3>Chart 3: Which brands dominate the market?</h3><img src="Picture/BarChart3.png" alt="Bar chart comparing number of television models by brand" /><p class="chart-description">Kogan, LG, and Samsung Electronics have the largest number of listed models.</p></figure>
+          <figure class="chart-card"><h3>Chart 4: Which screen type uses the least power?</h3><img src="Picture/BarChart4.png" alt="Bar chart comparing median power by screen technology" /><p class="chart-description">LCD TVs use the least power in this comparison, while OLED uses slightly more.</p></figure>
+          <figure class="chart-card"><h3>Chart 5: How does screen size relate to power use?</h3><img src="Picture/Scatter_plot_a.png" alt="Scatter plot showing the relationship between television screen size and power use" /><p class="chart-description">The relationship is clearly positive: larger TVs generally use more power.</p></figure>
+          <figure class="chart-card"><h3>Chart 6: How do star rating and screen size relate?</h3><img src="Picture/Scatter_plot_b.png" alt="Scatter plot showing the relationship between television star rating and screen size" /><p class="chart-description">Star ratings are spread across sizes, showing that bigger TVs can still be efficient when well designed.</p></figure>
         </div>
-        <!-- Provide short reminders about television energy use. -->
-        <div class="card-grid">
-          <article class="card"><h3>Brightness matters</h3><p>Higher brightness can draw more power.</p></article>
-          <article class="card"><h3>Standby is still use</h3><p>Switching off at the wall can reduce idle use.</p></article>
-          <article class="card"><h3>Size has a trade-off</h3><p>Larger panels usually use more energy.</p></article>
-        </div>
+        <section class="conclusion">
+          <h2>Conclusion</h2>
+          <p>When choosing a TV, balance screen size, technology, brand, and efficiency. A 55-inch LED TV is common and can be an energy-smart choice for many households.</p>
+        </section>
       </section>
     </main>
     
