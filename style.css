@@ -1,6 +1,6 @@
-/* Colours taken from the Power logo */
+
 :root {
-  /* Main dark colour used for headings and the header. */
+  
   --brown: #5b3826; /* Stores the site's main dark colour. */
   /* Light background colour used throughout the site. */
   --cream: #fdf3d1; /* Stores the site's light background colour. */
@@ -12,28 +12,38 @@
   --text: #333333; /* Stores the default text colour. */
 }
 
-/* Make width and height calculations include padding and borders. */
-* { box-sizing: border-box; /* Includes padding and borders in element dimensions. */ }
 
-/* Set the default appearance for the whole document. */
-body {
-  /* Remove the browser's default page margin. */
-  margin: 0; /* Removes the browser's default page margin. */
-  /* Choose the main font for the page. */
-  font-family: Arial, sans-serif; /* Sets the site's default typeface. */
-  /* Add comfortable vertical spacing between lines of text. */
-  line-height: 1.6; /* Adds readable vertical spacing between text lines. */
-  /* Use the reusable text colour variable. */
-  color: var(--text); /* Applies the default text colour. */
-  /* Use the cream colour as the page background. */
-  background: var(--cream); /* Applies the shared page background. */
+* { box-sizing: border-box; /* Includes padding and borders in element dimensions. */ 
 }
 
-/* Remove underlines and inherit the surrounding text colour from links. */
-a { color: inherit; text-decoration: none; /* Removes underlines and inherits link colour. */ }
 
-/* Give all heading levels the same colour and bottom spacing. */
-h1, h2, h3 { margin: 0 0 0.5rem; /* Adds consistent heading spacing. */ color: var(--brown); /* Applies the heading colour. */ }
+body {
+  margin: 0; /* Removes the browser's default page margin. */
+  
+  font-family: Arial, sans-serif; /* Sets the site's default typeface. */
+ 
+  line-height: 1.6; /* Adds readable vertical spacing between text lines. */
+  
+  color: var(--text); /* Applies the default text colour. */
+
+  background: var(--cream); /* Applies the shared page background. */
+  
+  /* Make the page fill the viewport height so the footer can sit at the bottom. */
+  min-height: 100vh; /* 100% of the viewport height */
+  display: flex; /* Stacks the page sections vertically. */
+  flex-direction: column; /* Places header, main, and footer in a column. */
+}
+
+
+a { color: inherit; 
+  text-decoration: none; /* Removes underlines and inherits link colour. */ 
+}
+
+
+h1, h2, h3 { 
+  margin: 0 0 0.5rem; /* Adds consistent heading spacing. */ 
+  color: var(--brown); /* Applies the heading colour. */ 
+}
 
 /* Arrange the logo and navigation across the top of the page. */
 .site-header {
@@ -46,34 +56,74 @@ h1, h2, h3 { margin: 0 0 0.5rem; /* Adds consistent heading spacing. */ color: v
   background: var(--brown); /* Applies the shared header colour. */
 }
 
-/* Keep the logo and brand name next to each other. */
-.brand { display: flex; /* Places logo and name in one row. */ align-items: center; /* Vertically aligns logo and name. */ gap: 0.75rem; /* Adds space between logo and name. */ }
-/* Set a consistent logo size. */
-.brand img { width: 48px; /* Sets the logo width. */ height: 48px; /* Sets the logo height. */ }
-/* Style the brand name in the header. */
-.brand-name { color: var(--white); /* Makes the brand name readable on the header. */ font-weight: bold; /* Emphasises the brand name. */ font-size: 1.1rem; /* Sets the brand name size. */ }
-/* Place navigation links in a row. */
-.site-nav { display: flex; /* Places navigation links in a row. */ gap: 0.5rem; /* Adds space between navigation links. */ }
-/* Style each navigation link. */
-.nav-link { padding: 0.5rem 1rem; /* Creates a comfortable link target. */ color: var(--cream); /* Applies the navigation text colour. */ font-weight: bold; /* Emphasises navigation labels. */ border-radius: 4px; /* Softens link corners. */ }
-/* Change the link colours when the pointer is over a link. */
-.nav-link:hover { background: var(--orange); /* Highlights the hovered link. */ color: var(--brown); /* Keeps hovered text readable. */ }
-/* Highlight the link for the page currently being viewed. */
-.nav-link[aria-current="page"] { background: var(--cream); /* Marks the current page. */ color: var(--brown); /* Applies readable current-link text. */ }
+.brand { display: flex; /* Places logo and name in one row. */ 
+  align-items: center; /* Vertically aligns logo and name. */ 
+  gap: 0.75rem; /* Adds space between logo and name. */ 
+}
 
-/* Limit the content width and add space around it. */
-.page-shell { max-width: 1000px; /* Limits line length on wide screens. */ margin: 0 auto; /* Centers the main content. */ padding: 2rem 1.5rem; /* Adds space around the main content. */ }
+.brand img { 
+  width: 48px; /* Sets the logo width. */ 
+  height: 48px; /* Sets the logo height. */ 
+}
+
+.brand-name { 
+  color: var(--white); /* Makes the brand name readable on the header. */ 
+  font-weight: bold; /* Emphasises the brand name. */ 
+  font-size: 1.1rem; /* Sets the brand name size. */ 
+}
+
+.site-nav { 
+  display: flex; /* Places navigation links in a row. */ 
+  gap: 0.5rem; /* Adds space between navigation links. */ 
+}
+
+.nav-link { 
+  padding: 0.5rem 1rem; /* Creates a comfortable link target. */ 
+  color: var(--cream); /* Applies the navigation text colour. */ 
+  font-weight: bold; /* Emphasises navigation labels. */ 
+  border-radius: 4px; /* Softens link corners. */ 
+}
+
+.nav-link:hover { 
+  background: var(--orange); 
+  color: var(--brown); 
+}
+
+.nav-link[aria-current="page"] { 
+  background: var(--cream); 
+  color: var(--brown); 
+}
+
+.page-shell {
+  flex: 1; /* Allows the main content area to fill the remaining vertical space. */
+  max-width: 1000px; /* Limits line length on wide screens. */ 
+  margin: 0 auto; /* Centers the main content. */ 
+  padding: 2rem 1.5rem; /* Adds space around the main content. */ 
+  width: 100%; /* Makes the main section use the available width. */
+}
+
 /* Add space below the introductory text. */
 .intro { margin-bottom: 2rem; /* Separates the introduction from following content. */ }
+
 /* Style supporting introductory text. */
 .lede { color: var(--brown); /* Styles introductory supporting text. */ }
-/* Style explanatory notes in italic text. */
-.note { color: var(--brown); /* Applies the note text colour. */ font-style: italic; /* Distinguishes explanatory notes. */ }
 
-/* Create a three-column layout for groups of cards. */
-.card-grid { display: grid; /* Creates a card layout. */ grid-template-columns: repeat(3, 1fr); /* Shows three cards per row. */ gap: 1rem; /* Adds space between cards. */ margin-bottom: 1.5rem; /* Separates card groups. */ }
-/* Give each card a visible border, background, and internal spacing. */
-.card { padding: 1rem; /* Adds space inside each card. */ background: var(--white); /* Gives cards a readable surface. */ border: 2px solid var(--brown); /* Defines each card edge. */ border-radius: 6px; /* Softens card corners. */ }
+/* Style explanatory notes in italic text. */
+.note { color: var(--brown); /* Applies the note text colour. */ 
+  font-style: italic; /* Distinguishes explanatory notes. */ 
+}
+
+.card-grid { display: grid; /* Creates a card layout. */ 
+  grid-template-columns: repeat(3, 1fr); /* Shows three cards per row. */ 
+  gap: 1rem; /* Adds space between cards. */ 
+  margin-bottom: 1.5rem; /* Separates card groups. */ 
+}
+
+.card { padding: 1rem; /* Adds space inside each card. */ 
+  background: var(--white); /* Gives cards a readable surface. */ 
+  border: 2px solid var(--brown); /* Defines each card edge. */ 
+  border-radius: 6px; /* Softens card corners. */ 
+}
 
 /* Style highlighted information blocks. */
 .highlight { padding: 1rem; /* Adds space inside the highlight. */ margin-bottom: 1.5rem; /* Separates the highlight from charts. */ background: var(--white); /* Gives the highlight a clear surface. */ border-left: 6px solid var(--orange); /* Draws attention to the highlight. */ border-radius: 6px; /* Softens the highlight corners. */ }
@@ -86,7 +136,12 @@ h1, h2, h3 { margin: 0 0 0.5rem; /* Adds consistent heading spacing. */ color: v
 .chart-card img { display: block; /* Removes inline-image whitespace. */ width: 100%; /* Uses the available chart width. */ object-fit: contain; /* Preserves the image proportions. */ background: var(--white); /* Gives transparent image areas a white surface. */ }
 
 /* Style the footer at the bottom of every page. */
-.site-footer { padding: 1rem 1.5rem; /* Adds space inside the footer. */ background: var(--brown); /* Applies the footer background. */ color: var(--cream); /* Applies readable footer text. */ text-align: center; /* Centers footer content. */ font-size: 0.85rem; /* Keeps footer text compact. */ }
+.site-footer { padding: 1rem 1.5rem; /* Adds space inside the footer. */ 
+  background: var(--brown); /* Applies the footer background. */ 
+  color: var(--cream); /* Applies readable footer text. */ 
+  text-align: center; /* Centers footer content. */ 
+  font-size: 0.85rem; /* Keeps footer text compact. */ 
+}
 /* Keep footer paragraphs close together. */
 .site-footer p { margin: 0.25rem 0; /* Keeps footer paragraphs close together. */ }
 
@@ -96,7 +151,9 @@ h1, h2, h3 { margin: 0 0 0.5rem; /* Adds consistent heading spacing. */ color: v
   .card-grid, .chart-grid { grid-template-columns: 1fr; /* Stacks grid items on narrow screens. */ }
   /* Keep charts readable without making the mobile page excessively tall. */
   /* Stack the header content vertically on small screens. */
-  .site-header { flex-direction: column; /* Stacks header groups on narrow screens. */ align-items: flex-start; /* Aligns stacked header groups to the left. */ }
+  .site-header { flex-direction: column; /* Stacks header groups on narrow screens. */ 
+    align-items: flex-start; /* Aligns stacked header groups to the left. */ 
+  }
 }
 
 .televisions-page {
