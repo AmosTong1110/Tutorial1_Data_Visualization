@@ -1,8 +1,5 @@
-
 function swapPage(event) {
-  // Stop the browser's default link action so JavaScript controls the navigation.
   event.preventDefault();
-  // Send the browser to the address stored in the link that was clicked.
   window.location.href = event.currentTarget.href;
 }
 
